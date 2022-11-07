@@ -1,0 +1,174 @@
+@use 'variables' as v;
+
+.footer{
+    background: v.$text-color;
+    padding: 3rem 0rem 0rem 0rem;
+    
+}
+.links{
+    text-decoration: none;
+    color:"white";
+}
+
+.contact-form{
+    position: relative;
+ background: white;
+ height: 60vh;
+ width: 90%;
+ margin: 2rem 5% 0rem;
+ border: 1px solid darkblue;
+ border-radius: 0.5rem;
+ box-shadow: 0px 0px 10px 10px rgba(15, 20, 34, 0.539)  ;
+ text-align: center;
+ padding-top: 0.8rem;
+}
+
+
+
+.footer-container{
+    border-top: rgb(107, 107, 107) solid 1px;
+    background: rgb(15, 20, 34) ;
+    height: auto;
+    color: white;
+    padding: none;
+margin-top: 2rem;
+    .navlinks_container{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 6rem 5rem;
+        list-style: none
+    }
+
+    .company_banner{
+        background-color: v.$text-color;
+        color: white;
+        text-align: center;
+       
+        padding: 0.6rem;
+    }
+    li{
+        list-style: none;
+        margin-top: 1rem;
+    }
+    .logo{
+        align-items: center;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;align-self: center;
+    }
+}
+
+.contact-form-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.3rem 2rem;
+    
+    
+}
+.contact-form-container{
+    
+    height: 50vh;
+    width: 60%;
+}
+.contact-form-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+   
+    width: 40%;
+
+}
+.contact-logo{
+    
+    height: max-content;
+    width: 50%;
+   
+    margin-left: 25%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+    input{
+        height: 3rem;
+        border: none;
+        width: 80%;
+        border-bottom: 1px solid lightgray;
+        padding: 0rem 1rem;
+        
+    }
+
+    textarea{
+        padding: 0.2rem 1rem;
+        resize: none;
+        border: 1px solid lightgrey;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+.footer  .navlinks_container{
+    flex-direction: column;
+    text-align: center;
+    
+}
+.navlinks_container{
+    padding: 3rem 0rem;
+}
+.navlinks{
+    padding:'3rem 0rem';
+    
+}
+.logo_footer{
+    width: 100%;
+}
+.social{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contact-form{
+    position: relative;
+ background: white;
+ height: 90vh;
+ width: 90%;
+
+ border: 1px solid darkblue;
+ border-radius: 0.5rem;
+ box-shadow: 0px 0px 10px 10px rgba(15, 20, 34, 0.539)  ;
+ text-align: center;
+ padding-top: 0.8rem;
+}
+.contact-form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.3rem 2rem;
+   
+    
+    
+}
+.contact-form-container{
+    
+    height: 50vh;
+    width: 100%;
+}
+.contact-form-info{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+   
+    width: 100%;
+
+}
+}

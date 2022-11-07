@@ -1,0 +1,45 @@
+@use 'variables' as v;
+
+
+
+.about-page{
+    background: v.$background-color;
+
+}
+
+.values{
+    text-align: center;
+    padding: 4rem;
+    padding-bottom: 7rem;
+    background: rgb(16, 37, 96);
+    color: white;
+
+}
+.values-card{
+ height: 10rem;
+ color: white;
+ width: 80%;
+}
+.values-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.values-card-heading{
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+    .values-flex{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-column-gap: 10rem;
+    }
+    .values-card{
+        height: 10rem;
+        color: white;
+        width: 100%;
+        margin-bottom: 6rem;
+       }
+       .details-card-container{
+        padding: 1rem;
+       }
+    }

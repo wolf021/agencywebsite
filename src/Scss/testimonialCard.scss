@@ -1,0 +1,38 @@
+.t_card{
+    width: 25%;
+    height: max-content;
+    background-color: rgba(62, 88, 158, 0.158) ;
+    box-shadow:  3px 3px opacify($color: #1f1f241f, $amount: 0.2);
+    border-radius: 0.5rem;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    color: white;
+    text-align: start;
+    
+    &:hover{
+        transition: 0.3s;
+        transform: scale(1.04);
+        background-color: rgba(16, 37, 95, 0.158) ;
+    }
+    .t_img_container{
+        display: flex;
+        justify-content: space-between;
+       
+       
+    }
+    .t_card_image{
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 6rem;
+        
+    }
+
+   
+}
+@media only screen and (max-width: 600px) {
+
+    .t_card{
+     width: auto;
+
+    }
+}

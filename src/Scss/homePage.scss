@@ -1,0 +1,287 @@
+@use 'variables' as v;
+
+.home_page{
+    background: v.$background-color;
+    height: auto;
+    overflow: hidden;
+}
+.hero_container{
+    background-color: v.$background-color;
+    height: 50rem;
+    .hero_wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 4rem;
+    }
+    .hero_img{
+        padding-top: 7rem;
+        width: 50%;
+        height: 36rem;
+    }
+
+    .info_container{
+        color: rgb(255, 255, 255);
+        position: static;
+        height: 17rem;
+        padding-top: 18rem;
+        width: 40%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        animation: fadeIn ease-in-out 1s;
+        
+        @keyframes fadeIn{
+  0% {
+    opacity:0;
+    transform: translatey(-30rem);
+  }
+  100% {
+    opacity:1;
+    transform: translatey(0rem);
+  }
+}
+    }
+    .hero_title{
+        font-size: 2.5rem;
+        text-shadow: 3px;
+       
+    }
+    #hero_title_span{
+        color: v.$text-color;
+        font-size: 3rem;
+        
+        
+    }
+
+    .our_stacks{
+       color: white;
+       display: flex;
+       margin: 5rem 3rem;
+       justify-content: space-between;
+    }
+    .stacks{
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+       
+        
+        .react_icon{
+            height: 2rem;
+            width: 8rem;
+        }
+    }
+}
+
+.platorm_container{
+    padding-top: 2rem;
+    text-align: center;
+    color: white;
+    height: auto;
+    padding: 8rem 3rem;
+
+    .platform_span{
+        color: v.$text-color;
+        
+    }
+    
+
+    
+    .card_container{
+        padding: 2rem 0rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       
+    }
+}
+.process_container{
+    text-align: center;
+    color: white;
+    .platform_span{
+        color: v.$text-color;
+        
+    }
+
+    
+    .process_card_container{
+        display: flex;
+        flex-wrap: wrap;
+justify-content: space-evenly;
+padding: 2rem 2rem;
+    }
+    div:nth-child(2){
+        margin-top: 3rem;
+        animation: fadeIn ease-in-out 2s;
+        
+        
+        @keyframes fadeIn{
+  0% {
+    opacity:0;
+    transform: translatey(30rem);
+  }
+  100% {
+    opacity:1;
+    transform: translatey(0rem);
+  }
+}
+    }
+    div:nth-child(3){
+        margin-top: 6rem;
+    }
+}
+.ready_wrapper{
+    padding: 6rem;
+
+
+.Ready_container{
+    background-image: url(../Components//Assets//Images//back.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% center;
+    color: white;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 3rem 0rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    padding: 0rem 3rem;
+    -webkit-box-shadow: 0 0 20px 25px v.$text-color;
+    -moz-box-shadow: 0 0 20px 25px v.$text-color;
+    box-shadow: 0 0 20px 25px opacify($color: #212c815e, $amount: 0.2);
+    animation: background_shadow   ease-in-out 2s infinite alternate;
+
+    @keyframes background_shadow {
+        50% {
+            -webkit-box-shadow: 0 0 20px 25px v.$text-color;
+            -moz-box-shadow: 0 0 20px 25px v.$text-color;
+            box-shadow: 0 0 20px 25px opacify($color: #1c203fad, $amount: 0.2);
+        
+          }
+        100%{
+            -webkit-box-shadow: 0 0 20px 25px v.$text-color;
+    -moz-box-shadow: 0 0 20px 25px v.$text-color;
+    box-shadow: 0 0 20px 25px opacify($color: #2181595e, $amount: 0.4);
+        }
+      
+        
+    }
+    
+}
+.ready_heading{
+    font-size: 2rem;
+    width: 50%;
+   padding-top: 1rem;
+   text-align: start;
+}
+.title_span{
+    color: v.$text-color;
+
+}
+}
+.testimonials_section{
+    
+margin: 3rem 0rem;
+color: white;
+text-align: center;
+}
+.testimonials{
+    color: white;
+    padding: 3rem 3rem;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-self: center;
+    align-content: center;
+    div:nth-child(2){
+        margin-top: 3rem;
+    }
+    div:nth-child(5){
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero_title{
+        font-size: 0.5rem;
+        text-shadow: 3px;
+       
+    }
+    #hero_title_span{
+        color: v.$text-color;
+        font-size: 1.5rem;
+        
+        
+    }
+    .card_container{
+        padding: 2rem 0rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+       width: 100%;
+    }
+    .Ready_container{
+        
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+        
+
+        
+    }
+    .ready_wrapper .ready_heading{
+        font-size: 1rem;
+        width: 100%;  
+    }
+    .ready_wrapper{
+        padding-bottom: 6rem;
+        height: 19rem;
+        margin-left: -9%;
+    }
+    .testimonials{
+        flex-direction: column;
+       
+    }
+    .card_container{
+       align-content: center;
+    }
+  
+    .hero_wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        
+       
+    }
+    .hero_container .hero_img{
+        width: 100%;
+        height: auto;
+    }
+    .hero_container .info_container {
+       
+        padding-top: 3rem;
+        width: 100%;
+    }
+    .platorm_container{
+        padding: 10rem 3rem;
+    }
+    .our_stacks{
+        display: none;
+    }
+    .hero_container .our_stacks{
+        display: none;
+    }
+    .hero_info{
+        margin:2rem 0rem;
+    }
+    .button_primary{
+        align-self: center;
+    }
+  }

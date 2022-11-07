@@ -1,0 +1,109 @@
+@use 'variables' as v;
+
+
+
+.services-hero{
+    background: v.$background-color;
+    margin-bottom: 5rem;
+    height: 55rem;
+
+    
+}
+.service-card-section{
+    margin: 7rem 2rem;
+    text-align: center;
+}
+.services-overview-cards{
+    display:flex ;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0rem 2rem;
+}
+.services_span{
+    color: v.$text-color;
+    font-size: 1.5rem;
+}
+.software-dev-process{
+    padding: 3rem;
+    margin: 8rem 4rem;
+    background: rgb(16, 37, 95);
+    color: white;
+    list-style: none;
+}
+.dev-process-heading{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.software-dev-process-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list-line-height{
+    line-height: 1.6rem;
+}
+.icon-flex{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 0rem;
+}
+.method-width{
+    width: 25%;
+}
+.tech-stacks{
+    text-align: center;
+    margin: 9rem 0rem;
+}
+.stacks-container-flex{
+    margin: 3rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .services-overview-cards{
+        width: auto;
+        display:flex ;
+        justify-content: space-between;
+        flex-direction: column;
+       
+    }
+    .service-card-section{
+        
+        text-align: center;
+    }
+
+    .service-card-section{
+        margin: 7rem 2rem;
+        text-align: center;
+    }
+    .software-dev-process-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .software-dev-process{
+        text-align: center;
+        width: auto;
+        padding: 3rem;
+        margin: 8rem 0rem;
+        background: rgb(16, 37, 95);
+        color: white;
+        list-style: none;
+    }
+    .method-width{
+        width: 100%;
+    }
+    .method-padding{
+        padding-bottom: 2rem;
+    }
+    .stacks-container-flex{
+        margin: 3rem 0rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-row-gap: 3rem;
+    }
+  }
