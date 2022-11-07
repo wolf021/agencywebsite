@@ -218,6 +218,11 @@ text-align: center;
         
         
     }
+    .hero_wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 2rem;
+    }
     .card_container{
         padding: 2rem 0rem;
         display: flex;
@@ -262,7 +267,7 @@ text-align: center;
     }
     .hero_container .hero_img{
         width: 100%;
-        height: auto;
+        height:12rem;
     }
     .hero_container .info_container {
        
