@@ -18,6 +18,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import ServicesImg from '../Components/Assets/Images/services.png'
 import { faDesktop,faMobile,faBrush,faLightbulb,faBinoculars,faSwatchbook, faLaptopCode, faBug, faCloudArrowUp, faGears} from '@fortawesome/free-solid-svg-icons'
 import ServicesCard from '../Components/ServicesCard/ServicesCard';
+import { Helmet } from 'react-helmet-async'
 
 
 
@@ -27,6 +28,15 @@ import ServicesCard from '../Components/ServicesCard/ServicesCard';
 
 const ServicesPage = () => {
   return (
+    <>
+    <Helmet>
+    <title>
+    Services - DevEclipse
+    </title>
+    <meta name='description' content='Tkxel is a Custom Software Development company in USA. Services include: UI/UX design, Mobile & Web Applications, Seo.' />
+    <link rel='canonical' href='/services' />
+   </Helmet>
+    
     <div className="services-page">
         <section className="hero_container services-hero"  >
         <div className="hero_wrapper">
@@ -40,6 +50,7 @@ const ServicesPage = () => {
           We provide you end to end software development and consultancy services resulting in extraordinary digital experiences.
           </p>
           <div>
+            <br/>
           <button className="button_primary">
            Lets Talk
           </button>
@@ -267,6 +278,7 @@ const ServicesPage = () => {
 
       </section>
     </div>
+    </>
   )
 }
 

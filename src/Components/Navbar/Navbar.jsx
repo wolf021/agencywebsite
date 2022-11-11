@@ -28,17 +28,19 @@ const Navbar = () => {
     <nav className={first? "navbar1" : "navbar2"}>
       
       <Link style={{textDecoration: 'none',color: 'white',display:"flex", alignItems: 'center',justifyContent: 'space-between', width:"10%"}} to='/' >
-        <img  src={logo}  className="logo_img" alt="logo"/>
-        <h1>Devonic</h1>
+        <h1 style={{color:"grey"}} ><span style={{color:"rgb(39, 160, 134)"}}>D</span>ev<span style={{color:"rgb(39, 160, 134)"}}>E</span>clipse</h1>
       </Link>
         <div className="nav_links">
          <Link  to='/' id="nav_link" >Home </Link>
          <Link to='/services' id="nav_link"  >Services   </Link>
          <Link to='/about' id="nav_link" >About </Link>
         </div>
+        <a href="#contact">
+        
         <button className="button_primary" id='nav_button'>
           Get a Quote
         </button>
+        </a>
       
         <div>
           
@@ -49,7 +51,7 @@ const Navbar = () => {
             setHamburger(false)
             setDropDown(false)
         }} >
-          <FontAwesomeIcon icon={!hamburger? faBars : faXmark} size="2x"/>
+          <FontAwesomeIcon icon={!hamburger? faBars : faXmark} size="2x" color='grey'/>
         </div>
         </div>
 

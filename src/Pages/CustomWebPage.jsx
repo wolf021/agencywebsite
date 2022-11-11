@@ -19,10 +19,20 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import DetailsCard from '../Components/DetailsCard/DetailsCard.jsx'
 import webImg from '../Components/Assets/Images/webdev.png'
 import { faDesktop,faBrush,faLightbulb,faBinoculars,faSwatchbook, faLaptopCode, faBug, faCloudArrowUp, faGears} from '@fortawesome/free-solid-svg-icons'
+import { Helmet } from 'react-helmet-async'
 
 
 const CustomWebPage = () => {
   return (
+    <>
+    <Helmet>
+    <title>
+    Custom Software Development Services in USA | DevEclipse 
+    </title>
+    <meta name='description' content='Looking to outsource software development? Devonic is a top custom software development services company that provides custom software solution.' />
+    <link rel='canonical' href='/services/custom-web-development' />
+   </Helmet>
+   
     <div className="custom-web-dev">
            <div className="services-page">
         <section className="hero_container services-hero"  >
@@ -256,6 +266,7 @@ We give the best solutions to your any problem that you face. We make sure to pr
       </section>
     </div>
     </div>
+    </>
   )
 }
 

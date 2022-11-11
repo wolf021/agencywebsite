@@ -36,10 +36,9 @@ const Footer = () => {
      <div className="contact-form-info">
       <div className="branding">
         <div className="contact-logo">
-          <img src={Logo} alt="Logo" height="80%" width="70%" />
+        <p style={{color:"grey",fontSize:"3rem"}} ><span style={{color:"rgb(39, 160, 134)"}}>D</span>ev<span style={{color:"rgb(39, 160, 134)"}}>E</span>clipse</p>
         </div>
-        <br/>
-      <h4 className="logo">Devonic</h4>
+       
       </div>
       
       <div className="contact-number">

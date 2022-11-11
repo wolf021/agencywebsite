@@ -11,11 +11,21 @@ import avatar from '../Components/Assets/Images/avatar.png'
 import HeroImg from '../Components/Assets/Images/HeroImg.gif';
 import '../Scss/homePage.scss'
 import TestimonialCard from '../Components/TestimonialCard/TestimonialCard';
+import { Helmet } from 'react-helmet-async';
 
 
 const HomePage = () => {
  
   return (
+   <>
+   <Helmet>
+    <title>
+      DevEclipse - Custom Software Development Agency 
+    </title>
+    <meta name='description' content='Looking for Top Software Development Company in USA? We Engineer Software Solutions for Enterprises, Growth Companies & Startups.' />
+    <link rel='canonical' href='/' />
+   </Helmet>
+   
 
     <div className="home_page" 
     >
@@ -126,6 +136,7 @@ const HomePage = () => {
   </div>
 </section>
     </div>
+    </>
     
   )
 }

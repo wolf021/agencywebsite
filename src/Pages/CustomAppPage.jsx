@@ -18,10 +18,21 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import DetailsCard from '../Components/DetailsCard/DetailsCard.jsx'
 import AppImg from '../Components/Assets/Images/appdev.png'
 import { faMobile,faBrush,faLightbulb,faBinoculars,faSwatchbook, faLaptopCode, faBug, faCloudArrowUp, faGears} from '@fortawesome/free-solid-svg-icons'
+import { Helmet } from 'react-helmet-async'
 
 
 const CustomAppPage = () => {
   return (
+    <>
+      <Helmet>
+    <title>
+    Web Application Development Services | Web App Services | DevEclipse
+    </title>
+    <meta name='description' content='Our cutting-edge web application development services cover full Front-End Back-End services' />
+    <link rel='canonical' href='/services/custom-app-development' />
+   </Helmet>
+   
+    
     <div className="custom-app-dev">
               <div className="services-page">
         <section className="hero_container services-hero"  >
@@ -258,6 +269,7 @@ We develop high-quality mobile applications for you, depending upon your needs, 
       </section>
     </div>
     </div>
+    </>
   )
 }
 

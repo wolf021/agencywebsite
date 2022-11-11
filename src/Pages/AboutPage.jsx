@@ -5,10 +5,21 @@ import HeroImg from '../Components/Assets/Images/HeroImg.gif';
 import DetailsCard from '../Components/DetailsCard/DetailsCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle, faHeartCircleBolt, faCircleUser, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
+import { Helmet } from 'react-helmet-async';
 
 
 const AboutPage = () => {
   return (
+    <>
+       <Helmet>
+    <title>
+    About Us - DevEclipse
+    </title>
+    <meta name='description' content='Devonic is a leading software company located in USA. We are committed to develop innovative solutions for short to medium companies.' />
+    <link rel='canonical' href='/services/custom-app-development' />
+   </Helmet>
+    
+    
     <div className="about">
        <section className="hero_container about-page"  >
         <div className="hero_wrapper">
@@ -100,6 +111,7 @@ const AboutPage = () => {
         </div>
       </section>
     </div>
+    </>
   )
 }
 

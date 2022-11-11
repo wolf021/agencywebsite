@@ -18,9 +18,23 @@ import DetailsCard from '../Components/DetailsCard/DetailsCard.jsx'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import UiImg from '../Components/Assets/Images/uiux.png'
 import { faBrush,faLightbulb,faBinoculars,faSwatchbook, faLaptopCode, faBug, faCloudArrowUp, faGears} from '@fortawesome/free-solid-svg-icons'
+import { Helmet } from 'react-helmet-async'
 
 const UiUx = () => {
   return (
+
+<>
+<Helmet>
+    <title>
+    UI/UX Design and Development Services - DevEclipse
+    </title>
+    <meta name='description' content='We offer best-in-class UI/UX Design and Development Services to improve your web and mobile apps that keeps your audience engaged.' />
+    <link rel='canonical' href='/services/ui-ux-design' />
+   </Helmet>
+
+
+
+
     <div className="ui-page">
   <div className="custom-web-dev">
            <div className="services-page">
@@ -256,6 +270,7 @@ We make sure to build high-quality designs that are interactive for your target 
     </div>
     </div>
     </div>
+    </>
   )
 }
 

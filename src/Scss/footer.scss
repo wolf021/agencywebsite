@@ -11,6 +11,7 @@
 }
 
 .contact-form{
+   
     position: relative;
  background: white;
  height: 60vh;
@@ -63,6 +64,7 @@ margin-top: 2rem;
 }
 
 .contact-form-wrapper{
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -76,6 +78,7 @@ margin-top: 2rem;
     width: 60%;
 }
 .contact-form-info{
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
