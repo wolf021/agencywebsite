@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import {Link} from 'react-router-dom'
 import '../../Scss/navbar.scss'
-import logo from '../Assets/Images/logo.png'
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Logo from "../Assets/Images/deveclipselogo.png"
 import { faXmark, faBars,faAngleDown} from '@fortawesome/free-solid-svg-icons'
 
 
@@ -27,8 +27,8 @@ const Navbar = () => {
   
     <nav className={first? "navbar1" : "navbar2"}>
       
-      <Link style={{textDecoration: 'none',color: 'white',display:"flex", alignItems: 'center',justifyContent: 'space-between', width:"10%"}} to='/' >
-        <h1 style={{color:"white"}} ><span style={{color:"rgb(39, 160, 134)"}}>D</span>ev<span style={{color:"rgb(39, 160, 134)"}}>E</span>clipse</h1>
+      <Link className='nav-logo'  to='/' >
+        <img src={Logo} alt="deveclipse" height="100%" width="100%" />
       </Link>
         <div className="nav_links">
          <Link  to='/' id="nav_link" >Home </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
             setHamburger(false)
             setDropDown(false)
         }} >
-          <FontAwesomeIcon icon={!hamburger? faBars : faXmark} size="2x" color='grey'/>
+          <FontAwesomeIcon icon={!hamburger? faBars : faXmark} size="2x" color='white'/>
         </div>
         </div>
 

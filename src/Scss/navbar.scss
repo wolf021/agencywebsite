@@ -37,7 +37,15 @@
 .logo_img{
     animation: logo1 5s infinite  ;
     height: 30%;
-    width:30%
+    width:15%
+}
+.nav-logo{
+    
+    display:flex;
+    align-Items: center;
+    justify-Content: space-between;
+    height: 60%;
+    width:10%;
 }
 
 @keyframes logo1 {
@@ -70,6 +78,7 @@ justify-content: space-evenly;
 
 }
 .button_primary{
+    
     color: white;
     font-weight: bold;
     background-color: v.$text-color;
@@ -137,14 +146,21 @@ justify-content: space-evenly;
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     .mobile-navlinks-hidden{
         visibility: hidden;
         margin-left: 80%;
-       
         height: 0;
         
         
+    }
+    .nav-logo{
+    
+        display:flex;
+        align-Items: center;
+        justify-Content: space-between;
+        height: 50%;
+        width:35%;
     }
 
    .nav_links{
@@ -207,7 +223,7 @@ justify-content: space-evenly;
 
   
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 820px) {
    
 
 .nav_menu{
@@ -221,5 +237,5 @@ justify-content: space-evenly;
     
 }
 
-   
+
  }
