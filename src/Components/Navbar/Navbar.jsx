@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav className={first? "navbar1" : "navbar2"}>
       
       <Link style={{textDecoration: 'none',color: 'white',display:"flex", alignItems: 'center',justifyContent: 'space-between', width:"10%"}} to='/' >
-        <h1 style={{color:"grey"}} ><span style={{color:"rgb(39, 160, 134)"}}>D</span>ev<span style={{color:"rgb(39, 160, 134)"}}>E</span>clipse</h1>
+        <h1 style={{color:"white"}} ><span style={{color:"rgb(39, 160, 134)"}}>D</span>ev<span style={{color:"rgb(39, 160, 134)"}}>E</span>clipse</h1>
       </Link>
         <div className="nav_links">
          <Link  to='/' id="nav_link" >Home </Link>
