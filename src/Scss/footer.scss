@@ -11,9 +11,9 @@
 }
 
 .contact-form{
-   
+   color: white;
     position: relative;
- background: white;
+ background: rgba(0, 0, 0, 0.908);
  height: 60vh;
  width: 90%;
  margin: 2rem 5% 0rem;
@@ -21,7 +21,7 @@
  border-radius: 0.5rem;
  box-shadow: 0px 0px 10px 10px rgba(15, 20, 34, 0.539)  ;
  text-align: center;
- padding-top: 0.8rem;
+ padding: 2% 0%;
 }
 
 
@@ -74,16 +74,16 @@ margin-top: 2rem;
 }
 .contact-form-container{
     
-    height: 50vh;
+    
     width: 60%;
 }
 .contact-form-info{
     
+    height: 27vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-   
     width: 40%;
 
 }
@@ -95,29 +95,41 @@ margin-top: 2rem;
     margin-left: 25%;
 }
 form{
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 50vh;
     input{
+        color: white;
+        background: rgba(42, 42, 42, 0.35);
         height: 3rem;
         border: none;
         width: 80%;
-        border-bottom: 1px solid lightgray;
+        border-bottom: 1px solid rgb(11, 29, 80);
         padding: 0rem 1rem;
         
+        &::placeholder{
+            color: white;
+        }
     }
 
     textarea{
+        color: white;
+        background: rgba(42, 42, 42, 0.35);
         padding: 0.2rem 1rem;
         resize: none;
-        border: 1px solid lightgrey;
+        border: 1px solid rgb(11, 29, 80);
+
+        &::placeholder{
+            color: white;
+        }
     }
 }
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
 .footer  .navlinks_container{
     flex-direction: column;
@@ -139,16 +151,25 @@ form{
     justify-content: space-evenly;
 }
 .contact-form{
+    padding: 2rem 0rem;
     position: relative;
- background: white;
+ background: rgba(0, 0, 0, 0.929);
  height: 90vh;
  width: 90%;
-
  border: 1px solid darkblue;
  border-radius: 0.5rem;
  box-shadow: 0px 0px 10px 10px rgba(15, 20, 34, 0.539)  ;
  text-align: center;
- padding-top: 0.8rem;
+}
+.contact-logo{
+    
+    
+        height: max-content;
+        width: 50%;
+       margin-bottom: 1rem;
+        margin-left: 22%;
+    
+
 }
 .contact-form-wrapper{
     display: flex;
@@ -161,16 +182,16 @@ form{
 }
 .contact-form-container{
     
-    height: 50vh;
+    
     width: 100%;
 }
 .contact-form-info{
-    
+    padding-top: 0;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-   
     width: 100%;
 
 }

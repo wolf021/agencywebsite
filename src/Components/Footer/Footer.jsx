@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../Scss/footer.scss'
 import { Link } from 'react-router-dom'
-import Logo from '../Assets/Images/logo.png'
+import Logo from '../Assets/Images/deveclipselogo.png'
 import Facebook from '../Assets/Images/facebook.png'
 import Whatsapp from '../Assets/Images/whatsapp.png'
 import Gmail from '../Assets/Images/gmail.png'
@@ -34,22 +34,22 @@ const Footer = () => {
       </form>
      </div>
      <div className="contact-form-info">
-      <div className="branding">
+      
         <div className="contact-logo">
-        <p style={{color:"grey",fontSize:"3rem"}} ><span style={{color:"rgb(39, 160, 134)"}}>D</span>ev<span style={{color:"rgb(39, 160, 134)"}}>E</span>clipse</p>
-        </div>
+       <img src={Logo} alt="deveclipse logo" height="100%" width="100%" />
+        
        
       </div>
       
       <div className="contact-number">
         <h4 className="number-heading">Number</h4>
-        <br/>
+        
         <h4 className="number">078545434343</h4>
       </div>
-
+      <br/>
       <div className="contact-email">
         <h4 className="email-heading">Email</h4>
-        <br/>
+        
         <h4 className="email">
           devonictek@gmail.com
         </h4>
@@ -132,7 +132,7 @@ const Footer = () => {
 
         </div>
        <div className="company_banner">
-           Registred @ 2022 Under MOTU 4 LLC. All Rights Reserved. 
+       DevEclipse © 2022 | All rights reserved. 
        </div>
     </div>
     </footer>
