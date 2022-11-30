@@ -15,7 +15,7 @@ const AboutPage = () => {
     <title>
     About Us - DevEclipse
     </title>
-    <meta name='description' content='Devonic is a leading software company located in USA. We are committed to develop innovative solutions for short to medium companies.' />
+    <meta name='description' content='Deveclipse is a leading software company located in USA. We are committed to develop innovative solutions for short to medium companies.' />
     <link rel='canonical' href='/services/custom-app-development' />
    </Helmet>
     
@@ -43,6 +43,16 @@ const AboutPage = () => {
             </div>
         </div>
           
+      </section>
+      <section className="who-we-are">
+        <h3 style={{textAlign:"center",fontSize:"2rem"}} >Who <span style={{color:"teal"}}>We</span> Are</h3>
+        <p className="who-we-are-description">
+        Deveclipse is a technology consulting organization that connects strategy, design and engineering services into a seamless workflow devised to support clients every step of the way.
+        <br/> <br/>
+        The team is passionate about creating valuable products and helping other businesses climb the ladder of technological development.
+        <br/> <br/>
+        Our specialists have expertise in a wide variety of spheres including real estate, e-learning, healthcare, e-commerce, advertising, augmented reality, finance, sharing economy, and many more.
+        </p>
       </section>
       <section className="vision">
       <div className='details-card-container' >

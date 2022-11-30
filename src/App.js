@@ -9,6 +9,7 @@ import CustomWebPage from './Pages/CustomWebPage';
 import CustomAppPage from './Pages/CustomAppPage';
 import UiUxPage from './Pages/UiUxPage';
 import ScrollToTop from './Helpers/ScrollTopTop';
+import ErrorPage from './Pages/ErrorPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/services/custom-web-development" element={<CustomWebPage />} />
           <Route path="/services/custom-app-development" element={<CustomAppPage />} />
           <Route path="/services/ui-ux-design" element={<UiUxPage/>} />
+          <Route path="*" element={<ErrorPage/>} />
           
         </Routes>
         <Footer />

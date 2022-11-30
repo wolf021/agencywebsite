@@ -33,7 +33,7 @@ const ServicesPage = () => {
     <title>
     Services - DevEclipse
     </title>
-    <meta name='description' content='Tkxel is a Custom Software Development company in USA. Services include: UI/UX design, Mobile & Web Applications, Seo.' />
+    <meta name='description' content='Tkxel is a Custom Software Development company in USA & UK. Services include: UI/UX design, Mobile & Web Applications, Seo.' />
     <link rel='canonical' href='/services' />
    </Helmet>
     

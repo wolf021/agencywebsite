@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import '../../Scss/footer.scss'
 import { Link } from 'react-router-dom'
+import emailjs from '@emailjs/browser';
 import Logo from '../Assets/Images/deveclipselogo.png'
 import Facebook from '../Assets/Images/facebook.png'
 import Whatsapp from '../Assets/Images/whatsapp.png'
@@ -10,6 +11,20 @@ import Gmail from '../Assets/Images/gmail.png'
 
 
 const Footer = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_1cy2l06', 'template_zlwnyet', form.current, 'f9mlc2XpJXwz0bUxr')
+      .then((result) => {
+          console.log(result.text);
+          alert("Your Email Has been send to DevEclipse")
+      }, (error) => {
+          console.log(error.text);
+          alert("Something went wrong retry")
+      });
+  };
   return (
     <footer className='footer' id="contact" >
       <div ></div>
@@ -24,11 +39,11 @@ const Footer = () => {
       </h4>
     <div className="contact-form-wrapper">
      <div className="contact-form-container">
-      <form action="submit">
-        <input type="text" name='Name' placeholder='Name' />
-        <input type="text" name='Email' placeholder='Email' />
-        <textarea name="Message" id="Message" placeholder='Message' cols="30" rows="10"></textarea>
-        <button className="button_primary">
+      <form action="submit" ref={form} onSubmit={sendEmail} >
+        <input type="text"  placeholder='Name'  name="user_name" />
+        <input type="text" name="user_email" placeholder='Email' />
+        <textarea name="message" id="Message" placeholder='Message' cols="30" rows="10"></textarea>
+        <button className="button_primary" value="send" type='submit'>
            Send
           </button>
       </form>

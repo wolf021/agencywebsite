@@ -29,7 +29,7 @@ const CustomWebPage = () => {
     <title>
     Custom Software Development Services in USA | DevEclipse 
     </title>
-    <meta name='description' content='Looking to outsource software development? Devonic is a top custom software development services company that provides custom software solution.' />
+    <meta name='description' content='Looking to outsource software development? Deveclipse is a top custom software development services company that provides custom software solution.' />
     <link rel='canonical' href='/services/custom-web-development' />
    </Helmet>
    
