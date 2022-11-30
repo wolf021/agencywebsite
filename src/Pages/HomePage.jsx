@@ -8,6 +8,11 @@ import NodeIco from '../Components/Assets/Images/node.png'
 import ReactNIco from '../Components/Assets/Images/React-native.png'
 import FigmaIco from '../Components/Assets/Images/figma.png';
 import avatar from '../Components/Assets/Images/avatar.png'
+import avatar2 from '../Components/Assets/Images/avatar2.png'
+import avatar3 from '../Components/Assets/Images/avatar3.png'
+import avatar4 from '../Components/Assets/Images/avatar4.png'
+import avatar5 from '../Components/Assets/Images/avatar5.png'
+import avatar6 from '../Components/Assets/Images/avatar6.png'
 import HeroImg from '../Components/Assets/Images/HeroImg.gif';
 import '../Scss/homePage.scss'
 import TestimonialCard from '../Components/TestimonialCard/TestimonialCard';
@@ -128,11 +133,11 @@ const HomePage = () => {
   <div className="testimonials">
 
   <TestimonialCard Image={avatar}  Name="Mark John" Info="Good to Work with them ,Delivered On Time." Rating="4.2" />
-  <TestimonialCard Image={avatar}  Name="cohan Petal" Info="I have changed designs many times but they deliver." Rating="4.6" />
-  <TestimonialCard Image={avatar}  Name="Kashif Johnson" Info="You can install React Router from the public npm registry with either" Rating="4.1" />
-  <TestimonialCard Image={avatar}  Name="Cathrine" Info="As a Non-Background in It, They make the Transition to the wbe wtih ease." Rating="4.8" />
-  <TestimonialCard Image={avatar}  Name="Shiwali Kapoor" Info="Happy to be their client. their team is dedicated to deliver" Rating="4.0" />
-  <TestimonialCard Image={avatar}  Name="Andrej Bigik" Info="Good to be the part of the journey. as i am not easy to work with." Rating="3.5" />
+  <TestimonialCard Image={avatar2}  Name="cohan Petal" Info="I have changed designs many times but they deliver." Rating="4.6" />
+  <TestimonialCard Image={avatar3}  Name="Kashif Johnson" Info="You can install React Router from the public npm registry with either" Rating="4.1" />
+  <TestimonialCard Image={avatar4}  Name="Cathrine" Info="As a Non-Background in It, They make the Transition to the wbe wtih ease." Rating="4.8" />
+  <TestimonialCard Image={avatar5}  Name="Shiwali Kapoor" Info="Happy to be their client. their team is dedicated to deliver" Rating="4.0" />
+  <TestimonialCard Image={avatar6}  Name="Andrej Bigik" Info="Good to be the part of the journey. as i am not easy to work with." Rating="3.5" />
   </div>
 </section>
     </div>
