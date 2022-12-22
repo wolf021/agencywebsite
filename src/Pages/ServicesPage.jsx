@@ -58,7 +58,7 @@ const ServicesPage = () => {
             </div>
             <div className="hero_img">
               
-              <img src={ServicesImg} alt="" height="100%" width="100%" />
+              <img src={ServicesImg} alt="" loading='lazy' height="100%" width="100%" />
             </div>
                 
             </div>
@@ -182,72 +182,72 @@ const ServicesPage = () => {
           </h4>
           <div className="stacks-container-flex">
             <div className="tech">
-              <img src={htmlB} alt="" />
+              <img src={htmlB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 Html
               </h4>
             </div>
             <div className="tech">
-              <img src={cssB} alt="" />
+              <img src={cssB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 Css
               </h4>
             </div>
             <div className="tech">
-              <img src={jsB} alt="" />
+              <img src={jsB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 Js
               </h4>
             </div>
             <div className="tech">
-              <img src={reactB} alt="" />
+              <img src={reactB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 React
               </h4>
             </div>
             <div className="tech">
-              <img src={reduxB} alt="" />
+              <img src={reduxB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                Redux
               </h4>
             </div>
             <div className="tech">
-              <img src={reactB} alt="" />
+              <img src={reactB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 React Native
               </h4>
             </div>
             <div className="tech">
-              <img src={nextB} alt="" />
+              <img src={nextB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
               </h4>
             </div>
             <div className="tech">
-              <img src={mongoB} alt="" />
+              <img src={mongoB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 Mongo DB
               </h4>
             </div>
             <div className="tech">
-              <img src={nodeB} alt="" />
+              <img src={nodeB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 Node js
               </h4>
             </div>
             <div className="tech">
-              <img src={scssB} alt="" />
+              <img src={scssB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 Scss
               </h4>
             </div>
             <div className="tech">
-              <img src={muiB} alt="" />
+              <img src={muiB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 Material UI
               </h4>
             </div>
             <div className="tech">
-              <img src={tailwindB} alt="" />
+              <img src={tailwindB} alt="" loading='lazy' />
               <br/>
               <br/>
               <br/>
@@ -256,20 +256,20 @@ const ServicesPage = () => {
               </h4>
             </div>
             <div className="tech">
-              <img src={figmaB} alt="" />
+              <img src={figmaB} alt="" loading='lazy' />
               <br/><br/>
               <h4 className="stack-icon-heading">
                 Figma
               </h4>
             </div>
             <div className="tech">
-              <img src={githubB} alt="" />
+              <img src={githubB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 GitHub
               </h4>
             </div>
             <div className="tech">
-              <img src={gitlabB} alt="" />
+              <img src={gitlabB} alt="" loading='lazy' />
               <h4 className="stack-icon-heading">
                 GitLab
               </h4>

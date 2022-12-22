@@ -51,22 +51,30 @@ const Footer = () => {
      <div className="contact-form-info">
       
         <div className="contact-logo">
-       <img src={Logo} alt="deveclipse logo" height="100%" width="100%" />
+       <img src={Logo} alt="deveclipse logo" height="100%" width="100%" loading='lazy' />
         
        
       </div>
       
       <div className="contact-number">
-        <h4 className="number-heading">Number</h4>
+        <h4 className="number-heading"></h4>
         
-        <h4 className="number">078545434343</h4>
+        <h4 className="number"></h4>
+      </div>
+      <br/>
+      <div className="contact-email">
+        <h4 className="email-heading">Address</h4>
+        
+        <h4 className="email">
+        17 Manor Road Medford NY,11763
+        </h4>
       </div>
       <br/>
       <div className="contact-email">
         <h4 className="email-heading">Email</h4>
         
         <h4 className="email">
-          devonictek@gmail.com
+          tayyab9021@gmail.com
         </h4>
       </div>
      </div>
