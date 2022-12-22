@@ -63,7 +63,7 @@ const Footer = () => {
       </div>
       <br/>
       <div className="contact-email">
-        <h4 className="email-heading">Address</h4>
+        <h4 className="email-heading">Address</h4>d
         
         <h4 className="email">
         17 Manor Road Medford NY,11763
@@ -74,7 +74,7 @@ const Footer = () => {
         <h4 className="email-heading">Email</h4>
         
         <h4 className="email">
-          tayyab9021@gmail.com
+          devonictek@gmail.com
         </h4>
       </div>
      </div>
