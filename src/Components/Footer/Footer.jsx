@@ -151,7 +151,7 @@ const Footer = () => {
               </div>
             </a>
             <br />
-            <a href="https://api.whatsapp.com/send?phone=00447899456642">
+            <a href="https://api.whatsapp.com/send?phone=+447899456642">
               <div
                 className="facebook"
                 style={{ height: "3rem", width: "3rem" }}
